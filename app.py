@@ -117,7 +117,7 @@ if submit_button:
     # CSVファイル読み込み
     try:
         with st.spinner("求人データを読み込み中..."):
-            jobs_df = pd.read_csv('/home/user/jobs.csv')
+　　　　　　　jobs_df = pd.read_csv('jobs.csv')
             st.success(f"✅ {len(jobs_df)}件の求人データを読み込みました")
     except FileNotFoundError:
         st.error("❌ jobs.csvが見つかりません。ファイルをアップロードしてください。")
